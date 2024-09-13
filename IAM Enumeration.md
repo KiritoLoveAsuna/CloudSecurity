@@ -19,12 +19,12 @@ aws --profile target iam get-account-authorization-details --filter User
 
 List One Group info:
 aws --profile target iam get-account-authorization-details --filter Group --query "GroupDetailList[?GroupName=='admin']"
-
-List one user info:
-aws --profile target iam get-account-authorization-details --filter User Group --query "UserDetailList[?UserName=='admin-alice']"
-
-List one policy info:
-aws --profile target iam get-account-authorization-details --filter LocalManagedPolicy --query "Policies[?PolicyName=='amethyst_admin']"
-or 
-aws --profile target iam get-account-authorization-details --filter AWSManagedPolicy --query "Policies[?PolicyName=='AdministratorAccess']"
 ```
+>List one user info:
+>aws --profile target iam get-account-authorization-details --filter User Group --query "UserDetailList[?UserName=='admin-alice']"
+
+>List one policy info:
+>aws --profile target iam get-account-authorization-details --filter LocalManagedPolicy --query "Policies[?PolicyName=='amethyst_admin']"
+
+>aws --profile target iam get-account-authorization-details --filter AWSManagedPolicy --query "Policies[?PolicyName=='AdministratorAccess']"
+
