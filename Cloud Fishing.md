@@ -13,3 +13,8 @@ python3 oh365userfinder.py -r emails.txt
 
 https://aka.ms/sspr  
 Then trick user to answer 3 security question
+
+### My Apps
+https://myapps.microsoft.com/index.htm to check which services this account can access.
+### Tenant Id Convert to Tenant
+https://osint.aadinternals.com/
