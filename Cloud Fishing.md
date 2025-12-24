@@ -3,10 +3,11 @@
 ./username-anarchy Jordan Kim -@ @megabigtech.com
 ./username-anarchy --country france --auto
 ```
-### Oh365userfinder 
+### Email Checker
 Identify Valid Domain Email Address
 ```
 python3 oh365userfinder.py -r emails.txt
+python3 o365enum.py -u email.txt -m office.com
 ```
 ### Microsoft Entra Self-Service Password Reset (SSPR)
 >Microsoft Entra self-service password reset (SSPR) gives users the ability to change or reset their password, with no administrator or help desk involvement. If a user's account is locked or they forget their password, they can follow prompts to unblock themselves and get back to work.
