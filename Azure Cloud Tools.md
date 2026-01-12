@@ -11,7 +11,14 @@ python3 o365enum.py -u email.txt -m office.com
 ```
 ### M365 Password Spray
 ```
-python3 o365spray.py --username ryan.lin@megabigtech.com --passfile passwords.txt --domain megabigtech.com --lockout 1 --spray
+python3 o365spray.py -u 'yuki.tanaka@megabigtech.com' -p 'MegaDev79$' --lockout 1 --spray --spray-module=rst -d megabigtech.com
+activesync	https://outlook.office365.com/
+adfs	Currently not implemented
+autodiscover	https://autodiscover-s.outlook.com/
+autologon	https://autologon.microsoftazuread-sso.com/
+oauth2	https://login.microsoftonline.com/
+reporting	https://reports.office365.com/
+rst	https://login.microsoftonline.com/
 ```
 ```
 Import-Module MSOLSpray.ps1
