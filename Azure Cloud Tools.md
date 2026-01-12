@@ -38,3 +38,7 @@ RPS	Relaying parties of STS (AD FS). Requires -GetRelayingParties switch.
 
 Invoke-AADIntReconAsOutsider -DomainName megabigtech.com
 ```
+### SubDomain Finder
+```
+python3 azsubenum.py -b megabigtech --thread 10
+```
