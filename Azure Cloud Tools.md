@@ -23,3 +23,18 @@ Then trick user to answer 3 security question
 https://myapps.microsoft.com/index.htm to check which services this account can access.
 ### Tenant Id Convert to Tenant
 https://osint.aadinternals.com/
+### Domain Info
+```
+Value	Description
+DNS	Does the DNS record exist?
+MX	Does the MX point to Office 365?
+SPF	Does the SPF contain Exchange Online?
+Type	Federated or Managed
+DMARC	Is the DMARC record configured?
+DKIM	Is the DKIM record configured?
+MTA-STS	Is the MTA-STS recored configured?
+STS	The FQDN of the federated IdP’s (Identity Provider) STS (Security Token Service) server
+RPS	Relaying parties of STS (AD FS). Requires -GetRelayingParties switch.
+
+Invoke-AADIntReconAsOutsider -DomainName megabigtech.com
+```
