@@ -57,7 +57,7 @@ Invoke-AADIntReconAsOutsider -DomainName megabigtech.com
 python3 azsubenum.py -b megabigtech --thread 10 -p permutations.txt
 ```
 ### Azure Blob Finder
-Usage
+**Usage**  
 Create a file with account name and container name strings that you wish to enumerate. The file should have one entry per line, and can be in one of two formats:    
 
 * name - When a single string is specified, Basic Blob Finder will use the string as both the account name and the container name.  
