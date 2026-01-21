@@ -54,5 +54,5 @@ Invoke-AADIntReconAsOutsider -DomainName megabigtech.com
 ```
 ### SubDomain Finder
 ```
-python3 azsubenum.py -b megabigtech --thread 10
+python3 azsubenum.py -b megabigtech --thread 10 -p permutations.txt
 ```
