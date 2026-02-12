@@ -66,3 +66,7 @@ Create a file with account name and container name strings that you wish to enum
 for word in $(cat ../AzSubEnum/permutations.txt); do echo megabigtechinternal:$word >> namelist; done
 python3 basicblobfinder.py namelist
 ```
+### Checking Managed Domain or Federated Domain
+```
+curl "https://login.microsoftonline.com/getuserrealm.srf?login=international-am.com&json=1"
+```
