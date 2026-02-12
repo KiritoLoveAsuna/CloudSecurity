@@ -74,4 +74,5 @@ curl "https://login.microsoftonline.com/getuserrealm.srf?login=international-am.
 ```
 Invoke-WebRequest -Uri "https://ipinfo.io/20.75.112.13" | Select-Object -ExpandProperty Content
 curl https://ipinfo.io/20.75.112.13
+curl --silent 'https://azservicetags.azurewebsites.net/api/iplookup?ipAddresses=20.75.112.13' | jq
 ```
