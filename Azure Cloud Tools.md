@@ -70,3 +70,8 @@ python3 basicblobfinder.py namelist
 ```
 curl "https://login.microsoftonline.com/getuserrealm.srf?login=international-am.com&json=1"
 ```
+### IPInfo
+```
+Invoke-WebRequest -Uri "https://ipinfo.io/20.75.112.13" | Select-Object -ExpandProperty Content
+curl https://ipinfo.io/20.75.112.13
+```
