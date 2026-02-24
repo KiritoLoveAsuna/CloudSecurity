@@ -76,3 +76,17 @@ Invoke-WebRequest -Uri "https://ipinfo.io/20.75.112.13" | Select-Object -ExpandP
 curl https://ipinfo.io/20.75.112.13
 curl --silent 'https://azservicetags.azurewebsites.net/api/iplookup?ipAddresses=20.75.112.13' | jq
 ```
+### MFA Gap Finder - FindMeAccess
+```
+python3 findmeaccess.py audit -u edrian.taylor@megabigtech.com -p 'INeedAHoliday@Bahamas' -c 04b07795-8ddb-461a-bbee-02f9e1bf7b46(client id for azure cli) -r https://management.azure.com(optional) --ua_all
+
+Link of a list of client id:https://learn.microsoft.com/en-us/power-platform/admin/apps-to-allow
+
+cat edrian.taylor@megabigtech.com-accessible.txt
+
+python3 findmeaccess.py token -u edrian.ta2ylor@megabigtech.com -p 'INeedAHoliday@Bahamas' -c 04b07795-8ddb-461a-bbee-02f9e1bf7b46 -r https://management.azure.com --user_agent "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.6167.178 Mobile Safari/537.36"
+```
+List Resources
+```
+python3 ./findmeaccess.py audit --list_resources                                           
+```
