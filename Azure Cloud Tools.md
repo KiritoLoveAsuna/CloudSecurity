@@ -77,6 +77,7 @@ curl https://ipinfo.io/20.75.112.13
 curl --silent 'https://azservicetags.azurewebsites.net/api/iplookup?ipAddresses=20.75.112.13' | jq
 ```
 ### MFA Gap Finder - FindMeAccess
+Unknown User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Lumia 920  
 ```
 python3 findmeaccess.py audit -u edrian.taylor@megabigtech.com -p 'INeedAHoliday@Bahamas' -c 04b07795-8ddb-461a-bbee-02f9e1bf7b46(client id for azure cli) -r https://management.azure.com(optional) --ua_all
 
