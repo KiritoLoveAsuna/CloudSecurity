@@ -101,3 +101,7 @@ Queries
 mssql server queries;
 go
 ```
+### PSQL
+```
+psql 'Connection_String'
+```
