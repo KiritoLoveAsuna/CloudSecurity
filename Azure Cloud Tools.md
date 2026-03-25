@@ -106,3 +106,7 @@ Connect to Azure PostgreSQL Database
 ```
 psql 'Connection_String'
 ```
+### Cosmosdb_Curling.py
+1. python3 cosmosdb_curling.py --connection-string $connection_string --operation list-dbs
+2. python3 cosmosdb_curling.py --connection-string $connection_string --operation list-colls --database ToDoList92
+3. python3 cosmosdb_curling.py --connection-string $connection_string --operation list-docs --database ToDoList --collection Temp
