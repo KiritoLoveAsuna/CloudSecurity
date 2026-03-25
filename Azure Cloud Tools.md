@@ -102,6 +102,7 @@ mssql server queries;
 go
 ```
 ### PSQL
+Connect to Azure PostgreSQL Database
 ```
 psql 'Connection_String'
 ```
