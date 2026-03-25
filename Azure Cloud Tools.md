@@ -91,3 +91,13 @@ List Resources
 ```
 python3 ./findmeaccess.py audit --list_resources                                           
 ```
+### SQLCMD
+Connect to Azure MSSQL Server
+```
+sqlcmd -S tcp:azsrvfw-2506-azsql.database.windows.net,1433 -d azsrvfwMSSQLdb -U reader -P 'xxxxxx'
+```
+Queries
+```
+mssql server queries;
+go
+```
