@@ -19,6 +19,12 @@ autologon	https://autologon.microsoftazuread-sso.com/
 oauth2	https://login.microsoftonline.com/
 reporting	https://reports.office365.com/
 rst	https://login.microsoftonline.com/
+
+activesync = https://partner.outlook.cn/
+autodiscover = https://autodiscover-s.partner.outlook.cn/
+autologon = https://autologon.microsoftazuread-sso.com/
+oauth2 = https://login.partner.microsoftonline.cn/
+rst = https://login.partner.microsoftonline.cn/
 ```
 ```
 Import-Module MSOLSpray.ps1
