@@ -117,3 +117,9 @@ psql 'Connection_String'
 1. python3 cosmosdb_curling.py --connection-string $connection_string --operation list-dbs
 2. python3 cosmosdb_curling.py --connection-string $connection_string --operation list-colls --database ToDoList92
 3. python3 cosmosdb_curling.py --connection-string $connection_string --operation list-docs --database ToDoList --collection Temp
+### MicroBurst
+Enumerating Anonymous SubDomain
+```
+Import-Module .\MicroBurst\MicroBurst.psm1 -Verbose
+Invoke-EnumerateAzureSubDomains -Base corp -Verbose
+```
