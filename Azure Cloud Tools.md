@@ -94,6 +94,10 @@ cat edrian.taylor@megabigtech.com-accessible.txt
 
 python3 findmeaccess.py token -u edrian.ta2ylor@megabigtech.com -p 'INeedAHoliday@Bahamas' -c 04b07795-8ddb-461a-bbee-02f9e1bf7b46 -r https://management.azure.com --user_agent "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.6167.178 Mobile Safari/537.36"
 ```
+Try all combinations of resources, client ids
+```
+python3 findmeaccess.py audit -u email -p pass --ua_all(optional)
+```
 List Resources
 ```
 python3 ./findmeaccess.py audit --list_resources                                           
