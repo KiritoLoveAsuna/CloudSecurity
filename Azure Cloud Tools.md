@@ -102,6 +102,34 @@ List Resources
 ```
 python3 ./findmeaccess.py audit --list_resources                                           
 ```
+Find All Powershell Cmdlets that specific scope can do
+```
+$TargetScopes = @(
+  'Device.Read.All',
+  'ServicePrincipalEndpoint.Read.All',
+  'User.Read'
+)
+
+$Cmds =
+  Find-MgGraphCommand -Command '.*' -ApiVersion 'v1.0' |
+  ForEach-Object {
+    $cmd = $_
+    foreach ($perm in $cmd.Permissions) {
+      if ($perm.Name -in $TargetScopes) {
+        [pscustomobject]@{
+          Scope   = $perm.Name
+          Command = $cmd.Command
+          Module  = $cmd.Module
+          Method  = $cmd.Method
+          Uri     = $cmd.Uri
+        }
+      }
+    }
+  } |
+  Sort-Object Scope, Command, Uri -Unique
+
+$Cmds | Format-Table -AutoSize
+```
 ### SQLCMD
 Connect to Azure MSSQL Server
 ```
